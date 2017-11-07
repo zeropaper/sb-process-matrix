@@ -3,8 +3,9 @@
  */
 class DeliverablesService {
 
-    constructor($timeout) {
+    constructor($timeout, $q) {
         this.$timeout = $timeout;
+        this.$q = $q;
     }
 
     fetchAll() {
@@ -15,9 +16,21 @@ class DeliverablesService {
             });
     }
 
+    changeTaskProgress(task, newProgress) {
+
+        return this.$q(function(resolve, reject) {
+            if (Math.random() > 0.1) {
+                task.progress = newProgress;
+                resolve(task);
+            } else {
+                reject(new Error("Server to available"));
+            }
+        });
+    }
+
 }
 
-DeliverablesService.$inject = ['$timeout'];
+DeliverablesService.$inject = ['$timeout', '$q'];
 
 export {DeliverablesService}
 
