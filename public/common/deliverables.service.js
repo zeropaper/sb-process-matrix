@@ -23,7 +23,7 @@ class DeliverablesService {
                 task.progress = newProgress;
                 resolve(task);
             } else {
-                reject(new Error("Server to available"));
+                reject(new Error("Server not available"));
             }
         });
     }
@@ -56,7 +56,7 @@ var dummyData = [{
             "name": "Connectors Up installed",
             "utcStart": 1414364400000,
             "utcEnd": 1414364400000,
-            "progress": 0,
+            "progress": 50,
             "step": 5,
             "color": "3B3EAC"
         },
@@ -65,7 +65,7 @@ var dummyData = [{
             "name": "installed",
             "utcStart": 1414364400000,
             "utcEnd": 1414364400000,
-            "progress": 0,
+            "progress": 50,
             "step": 4,
             "color": "AAAA11"
         },
@@ -83,7 +83,7 @@ var dummyData = [{
             "name": "dispatched",
             "utcStart": 1414364400000,
             "utcEnd": 1414364400000,
-            "progress": 0,
+            "progress": 100,
             "step": 2,
             "color": "329262"
         },
@@ -101,7 +101,7 @@ var dummyData = [{
             "name": "ready for assembly",
             "utcStart": 1414364400000,
             "utcEnd": 1414364400000,
-            "progress": 0,
+            "progress": 100,
             "step": 1,
             "color": "0099C6"
         },
@@ -110,7 +110,7 @@ var dummyData = [{
             "name": "delivered",
             "utcStart": 1414364400000,
             "utcEnd": 1414364400000,
-            "progress": 0,
+            "progress": 100,
             "step": 3,
             "color": "316395"
         }
@@ -142,7 +142,7 @@ var dummyData = [{
                 "name": "dispatched",
                 "utcStart": 1416006000000,
                 "utcEnd": 1416006000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 2,
                 "color": "329262"
             },
@@ -160,7 +160,7 @@ var dummyData = [{
                 "name": "delivered",
                 "utcStart": 1416006000000,
                 "utcEnd": 1416006000000,
-                "progress": 0,
+                "progress": 50,
                 "step": 3,
                 "color": "316395"
             },
@@ -196,7 +196,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1416006000000,
                 "utcEnd": 1416006000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 1,
                 "color": "0099C6"
             }
@@ -1726,7 +1726,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1418857200000,
                 "utcEnd": 1418857200000,
-                "progress": 0,
+                "progress": 50,
                 "step": 1,
                 "color": "0099C6"
             },
@@ -1821,7 +1821,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1418166000000,
                 "utcEnd": 1418166000000,
-                "progress": 0,
+                "progress": 50,
                 "step": 1,
                 "color": "0099C6"
             },
@@ -1916,7 +1916,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1413410400000,
                 "utcEnd": 1413410400000,
-                "progress": 0,
+                "progress": 50,
                 "step": 1,
                 "color": "0099C6"
             }
@@ -1939,7 +1939,7 @@ var dummyData = [{
                 "name": "installed",
                 "utcStart": 1415574000000,
                 "utcEnd": 1415574000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 4,
                 "color": "AAAA11"
             },
@@ -1948,7 +1948,7 @@ var dummyData = [{
                 "name": "delivered",
                 "utcStart": 1415574000000,
                 "utcEnd": 1415574000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 3,
                 "color": "316395"
             },
@@ -1957,7 +1957,7 @@ var dummyData = [{
                 "name": "Slings Up installed",
                 "utcStart": 1415574000000,
                 "utcEnd": 1415574000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "AAAA11"
             },
@@ -1966,7 +1966,7 @@ var dummyData = [{
                 "name": "dispatched",
                 "utcStart": 1415574000000,
                 "utcEnd": 1415574000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 2,
                 "color": "329262"
             },
@@ -1975,7 +1975,7 @@ var dummyData = [{
                 "name": "Connectors Up installed",
                 "utcStart": 1415574000000,
                 "utcEnd": 1415574000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3B3EAC"
             },
@@ -1984,7 +1984,7 @@ var dummyData = [{
                 "name": "Slings Down installed",
                 "utcStart": 1415574000000,
                 "utcEnd": 1415574000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "994499"
             },
@@ -1993,7 +1993,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1415574000000,
                 "utcEnd": 1415574000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 1,
                 "color": "0099C6"
             },
@@ -2002,7 +2002,7 @@ var dummyData = [{
                 "name": "Connectors Down installed",
                 "utcStart": 1415574000000,
                 "utcEnd": 1415574000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3366CC"
             }
@@ -2025,7 +2025,7 @@ var dummyData = [{
                 "name": "installed",
                 "utcStart": 1416783600000,
                 "utcEnd": 1416783600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 4,
                 "color": "AAAA11"
             },
@@ -2034,7 +2034,7 @@ var dummyData = [{
                 "name": "Slings Up installed",
                 "utcStart": 1416783600000,
                 "utcEnd": 1416783600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "AAAA11"
             },
@@ -2043,7 +2043,7 @@ var dummyData = [{
                 "name": "Connectors Up installed",
                 "utcStart": 1416783600000,
                 "utcEnd": 1416783600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3B3EAC"
             },
@@ -2052,7 +2052,7 @@ var dummyData = [{
                 "name": "delivered",
                 "utcStart": 1416783600000,
                 "utcEnd": 1416783600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 3,
                 "color": "316395"
             },
@@ -2061,7 +2061,7 @@ var dummyData = [{
                 "name": "Connectors Down installed",
                 "utcStart": 1416783600000,
                 "utcEnd": 1416783600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3366CC"
             },
@@ -2070,7 +2070,7 @@ var dummyData = [{
                 "name": "dispatched",
                 "utcStart": 1416783600000,
                 "utcEnd": 1416783600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 2,
                 "color": "329262"
             },
@@ -2079,7 +2079,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1416783600000,
                 "utcEnd": 1416783600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 1,
                 "color": "0099C6"
             },
@@ -2088,7 +2088,7 @@ var dummyData = [{
                 "name": "Slings Down installed",
                 "utcStart": 1416783600000,
                 "utcEnd": 1416783600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "994499"
             }
@@ -2111,7 +2111,7 @@ var dummyData = [{
                 "name": "Connectors Up installed",
                 "utcStart": 1413669600000,
                 "utcEnd": 1413669600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3B3EAC"
             },
@@ -2120,7 +2120,7 @@ var dummyData = [{
                 "name": "Slings Up installed",
                 "utcStart": 1413669600000,
                 "utcEnd": 1413669600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "AAAA11"
             },
@@ -2129,7 +2129,7 @@ var dummyData = [{
                 "name": "Slings Down installed",
                 "utcStart": 1413669600000,
                 "utcEnd": 1413669600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "994499"
             },
@@ -2138,7 +2138,7 @@ var dummyData = [{
                 "name": "Connectors Down installed",
                 "utcStart": 1413669600000,
                 "utcEnd": 1413669600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3366CC"
             },
@@ -2147,7 +2147,7 @@ var dummyData = [{
                 "name": "dispatched",
                 "utcStart": 1413669600000,
                 "utcEnd": 1413669600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 2,
                 "color": "329262"
             },
@@ -2156,7 +2156,7 @@ var dummyData = [{
                 "name": "delivered",
                 "utcStart": 1413669600000,
                 "utcEnd": 1413669600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 3,
                 "color": "316395"
             },
@@ -2165,7 +2165,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1413669600000,
                 "utcEnd": 1413669600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 1,
                 "color": "0099C6"
             },
@@ -2174,7 +2174,7 @@ var dummyData = [{
                 "name": "installed",
                 "utcStart": 1413669600000,
                 "utcEnd": 1413669600000,
-                "progress": 0,
+                "progress": 100,
                 "step": 4,
                 "color": "AAAA11"
             }
@@ -2197,7 +2197,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1415142000000,
                 "utcEnd": 1415142000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 1,
                 "color": "0099C6"
             },
@@ -2206,7 +2206,7 @@ var dummyData = [{
                 "name": "Slings Up installed",
                 "utcStart": 1415142000000,
                 "utcEnd": 1415142000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "AAAA11"
             },
@@ -2215,7 +2215,7 @@ var dummyData = [{
                 "name": "Slings Down installed",
                 "utcStart": 1415142000000,
                 "utcEnd": 1415142000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "994499"
             },
@@ -2224,7 +2224,7 @@ var dummyData = [{
                 "name": "Connectors Down installed",
                 "utcStart": 1415142000000,
                 "utcEnd": 1415142000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3366CC"
             },
@@ -2233,7 +2233,7 @@ var dummyData = [{
                 "name": "Connectors Up installed",
                 "utcStart": 1415142000000,
                 "utcEnd": 1415142000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3B3EAC"
             },
@@ -2242,7 +2242,7 @@ var dummyData = [{
                 "name": "delivered",
                 "utcStart": 1415142000000,
                 "utcEnd": 1415142000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 3,
                 "color": "316395"
             },
@@ -2251,7 +2251,7 @@ var dummyData = [{
                 "name": "installed",
                 "utcStart": 1415142000000,
                 "utcEnd": 1415142000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 4,
                 "color": "AAAA11"
             },
@@ -2260,7 +2260,7 @@ var dummyData = [{
                 "name": "dispatched",
                 "utcStart": 1415142000000,
                 "utcEnd": 1415142000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 2,
                 "color": "329262"
             }
@@ -2283,7 +2283,7 @@ var dummyData = [{
                 "name": "dispatched",
                 "utcStart": 1416870000000,
                 "utcEnd": 1416870000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 2,
                 "color": "329262"
             },
@@ -2292,7 +2292,7 @@ var dummyData = [{
                 "name": "Slings Up installed",
                 "utcStart": 1416870000000,
                 "utcEnd": 1416870000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "AAAA11"
             },
@@ -2301,7 +2301,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1416870000000,
                 "utcEnd": 1416870000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 1,
                 "color": "0099C6"
             },
@@ -2310,7 +2310,7 @@ var dummyData = [{
                 "name": "delivered",
                 "utcStart": 1416870000000,
                 "utcEnd": 1416870000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 3,
                 "color": "316395"
             },
@@ -2319,7 +2319,7 @@ var dummyData = [{
                 "name": "installed",
                 "utcStart": 1416870000000,
                 "utcEnd": 1416870000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 4,
                 "color": "AAAA11"
             },
@@ -2328,7 +2328,7 @@ var dummyData = [{
                 "name": "Connectors Up installed",
                 "utcStart": 1416870000000,
                 "utcEnd": 1416870000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3B3EAC"
             },
@@ -2337,7 +2337,7 @@ var dummyData = [{
                 "name": "Connectors Down installed",
                 "utcStart": 1416870000000,
                 "utcEnd": 1416870000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3366CC"
             },
@@ -2346,7 +2346,7 @@ var dummyData = [{
                 "name": "Slings Down installed",
                 "utcStart": 1416870000000,
                 "utcEnd": 1416870000000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "994499"
             }
@@ -2369,7 +2369,7 @@ var dummyData = [{
                 "name": "delivered",
                 "utcStart": 1418252400000,
                 "utcEnd": 1418252400000,
-                "progress": 0,
+                "progress": 100,
                 "step": 3,
                 "color": "316395"
             },
@@ -2378,7 +2378,7 @@ var dummyData = [{
                 "name": "Slings Up installed",
                 "utcStart": 1418252400000,
                 "utcEnd": 1418252400000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "AAAA11"
             },
@@ -2387,7 +2387,7 @@ var dummyData = [{
                 "name": "Connectors Up installed",
                 "utcStart": 1418252400000,
                 "utcEnd": 1418252400000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3B3EAC"
             },
@@ -2396,7 +2396,7 @@ var dummyData = [{
                 "name": "Slings Down installed",
                 "utcStart": 1418252400000,
                 "utcEnd": 1418252400000,
-                "progress": 0,
+                "progress": 100,
                 "step": 6,
                 "color": "994499"
             },
@@ -2405,7 +2405,7 @@ var dummyData = [{
                 "name": "Connectors Down installed",
                 "utcStart": 1418252400000,
                 "utcEnd": 1418252400000,
-                "progress": 0,
+                "progress": 100,
                 "step": 5,
                 "color": "3366CC"
             },
@@ -2414,7 +2414,7 @@ var dummyData = [{
                 "name": "installed",
                 "utcStart": 1418252400000,
                 "utcEnd": 1418252400000,
-                "progress": 0,
+                "progress": 100,
                 "step": 4,
                 "color": "AAAA11"
             },
@@ -2423,7 +2423,7 @@ var dummyData = [{
                 "name": "ready for assembly",
                 "utcStart": 1418252400000,
                 "utcEnd": 1418252400000,
-                "progress": 0,
+                "progress": 100,
                 "step": 1,
                 "color": "0099C6"
             },
@@ -2432,7 +2432,7 @@ var dummyData = [{
                 "name": "dispatched",
                 "utcStart": 1418252400000,
                 "utcEnd": 1418252400000,
-                "progress": 0,
+                "progress": 100,
                 "step": 2,
                 "color": "329262"
             }
