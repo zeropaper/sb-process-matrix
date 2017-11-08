@@ -24,6 +24,13 @@ Install dependencies via npm
 ```
     npm install
 ```
+Verified environment
+```
+$ node --version
+    v6.11.0
+$ npm --version
+    5.5.1
+```
 
 ## Run
 Run locally
