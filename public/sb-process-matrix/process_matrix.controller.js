@@ -15,6 +15,11 @@ class ProcessMatrixController {
   $onInit () {
     console.log('input bindings are defined!', this.sbModel);
   }
+
+  formatDate(stamp) {
+    const date = new Date(stamp);
+    return date.toString().split(' ').slice(0, 4).join(' ');
+  }
 }
 
 export { ProcessMatrixController }

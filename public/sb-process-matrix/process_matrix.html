@@ -2,15 +2,47 @@
 
   <md-card-title class="less-blue">
     <div layout="column">
-      <h3>Material Design process visualization ...</h3>
+      <h1>Material Design process visualization ...</h1>
       <p>Content: 50 deliverables all having the same process with 8 steps</p>
     </div>
   </md-card-title>
 
   <md-card-content layout="row" layout-align="space-between">
 
-    <div ng-repeat="deliverable in $ctrl.sbModel">
-       :: ->> {{deliverable.name}}
+    <div class="sb-deliverable" ng-repeat="deliverable in $ctrl.sbModel">
+      <div class="sb-deliverable__info">
+        <h1 class="sb-deliverable__name">{{ deliverable.name }}</h1>
+        <div class="sb-deliverable__code">{{ deliverable.code }}</div>
+        <div class="sb-deliverable__path">{{ deliverable.structurePath.join(', ') }}</div>
+      </div>
+
+      <div class="sb-deliverable__activities">
+        <div class="sb-activity"
+          ng-repeat="activity in deliverable.activities | orderBy:'step'">
+          <div class="sb-activity__banner" ng-style="{'background-color': '#' + activity.color}"></div>
+          <div class="sb-activity__info">
+            <h2 class="sb-activity__name">{{ activity.name }}</h2>
+          </div>
+
+          <div class="sb-activity__step">
+            {{ activity.step }}
+          </div>
+
+          <div class="sb-activity__start">
+            Start:<br/>{{ $ctrl.formatDate(activity.utcStart) }}
+          </div>
+
+          <div class="sb-activity__end">
+            End:<br/>{{ $ctrl.formatDate(activity.utcEnd) }}
+          </div>
+
+          <div title="{{ activity.progress }}% completed"
+            ng-init="progress = (activity.progress === 100 ? 'done' : (activity.progress ? 'processing' : 'new'))"
+            ng-class="'sb-activity__progress sb-activity__progress--' + progress">
+            <div class="sb-activity__progress__dot">{{ activity.progress }}</div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </md-card-content>

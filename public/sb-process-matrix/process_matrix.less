@@ -1,3 +1,166 @@
+
 .less-blue {
-  background-color: lightgray;
+  background-color: lightblue;
+}
+
+.dot(@size: 1.8em) {
+  position: absolute;
+  width: @size;
+  height: @size;
+  line-height: @size;
+  border-radius: @size;
+  text-align: center;
+  color: #333;
+  background-color: #eee;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),
+              0 1px 1px 0 rgba(0,0,0,.14),
+              0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.sb {
+  &-deliverable {
+    display: flex;
+    align-items: center;
+    padding: 2vmin 0 1vmin 0;
+    margin-bottom: 1em;
+
+    &__info {
+      max-width: 15%;
+      min-width: 15%;
+      text-align: right;
+      padding: 0 1vmin;
+    }
+
+    &__name {
+      font-weight: 400;
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    &__path {
+      font-style: italic;
+      color: #666;
+    }
+
+    &__activities {
+      display: flex;
+      align-items: stretch;
+    }
+
+    @media screen and (max-width: 768px) {
+      &__activities {
+        max-width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+
+      &__info {
+        text-align: left;
+        max-width: 100%;
+        min-width: 100%;
+        display: flex;
+        margin-bottom: 1em;
+        line-height: 1.4rem;
+        align-items: baseline;
+
+        > * {
+          margin: 0.5em;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &-activity {
+    flex-grow: 1;
+    margin: 0 0.5vmin;
+    width: calc(12.5% - 1vmin);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),
+                0 1px 1px 0 rgba(0,0,0,.14),
+                0 2px 1px -1px rgba(0,0,0,.12);
+
+    @media screen and (max-width: 768px) {
+      width: auto;
+      flex-wrap: wrap;
+    }
+
+    &__banner {
+      height: 8px;
+    }
+
+    &__name,
+    &__start,
+    &__end {
+      padding: 0.5vmin 1vmin;
+    }
+
+    &__name {
+      flex-grow: 2;
+      font-weight: 400;
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    &__start,
+    &__end {
+      color: #666;
+      font-size: 0.8rem;
+    }
+
+    &__step {
+      font-size: 0.8rem;
+      top: -0.6em;
+      left: -0.5em;
+      font-weight: 700;
+      .dot;
+    }
+
+
+    &__progress {
+      height: 4px;
+
+      &__dot {
+        font-size: 0.6rem;
+        bottom: -1em;
+        right: -0.5em;
+        .dot(2.4em);
+      }
+
+      &--new {
+        background-color: red;
+        .sb-activity__progress__dot {
+          display: none;
+          // background-color: red;
+          // color: #fff;
+        }
+      }
+
+      &--processing {
+        background-color: grey;
+        .sb-activity__progress__dot {
+          background-color: grey;
+          color: #fff;
+        }
+      }
+
+      &--done {
+        background-color: green;
+        .sb-activity__progress__dot {
+          display: none;
+          // background-color: green;
+          // color: #fff;
+        }
+      }
+    }
+
+  }
+
 }
